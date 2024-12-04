@@ -28,7 +28,7 @@ func Mainnet() (*consensus.Network, types.Block) {
 		MaturityDelay:   144,
 	}
 	n.HardforkDevAddr.Height = 10000
-	n.HardforkDevAddr.OldAddress = parseAddr("7d0c44f7664e2d34e53efde0661a6f628ec9264785ae8e3cd7c973e8d190c3c97b5e3ecbc567")
+	n.HardforkDevAddr.OldAddress = types.Address{}
 	n.HardforkDevAddr.NewAddress = parseAddr("c10f0fc99f2ac2d6268a3427394cef5f419e858d4152309e9f8d4abbe8c495eeb804e05a961c")
 
 	n.HardforkTax.Height = 21000
