@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"go.thebigfile/coreutils/chain"
-	"go.thebigfile/coreutils/syncer"
-	"go.thebigfile/coreutils/testutil"
 	"go.thebigfile.com/core/gateway"
 	"go.thebigfile.com/core/types"
+	"go.thebigfile.com/coreutils/chain"
+	"go.thebigfile.com/coreutils/syncer"
+	"go.thebigfile.com/coreutils/testutil"
 	"go.uber.org/zap/zaptest"
 )
 

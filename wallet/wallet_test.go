@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"go.thebigfile/coreutils"
-	"go.thebigfile/coreutils/chain"
-	"go.thebigfile/coreutils/testutil"
-	"go.thebigfile/coreutils/wallet"
 	"go.thebigfile.com/core/consensus"
 	"go.thebigfile.com/core/types"
+	"go.thebigfile.com/coreutils"
+	"go.thebigfile.com/coreutils/chain"
+	"go.thebigfile.com/coreutils/testutil"
+	"go.thebigfile.com/coreutils/wallet"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest"
 )

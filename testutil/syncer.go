@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"go.thebigfile/coreutils/syncer"
+	"go.thebigfile.com/coreutils/syncer"
 )
 
 // A MemPeerStore is an in-memory implementation of a PeerStore.

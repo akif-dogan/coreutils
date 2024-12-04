@@ -7,12 +7,12 @@ import (
 	"sync"
 	"testing"
 
-	"go.thebigfile/coreutils/chain"
-	rhp4 "go.thebigfile/coreutils/rhp/v4"
 	"go.sia.tech/mux/v2"
 	"go.thebigfile.com/core/consensus"
 	proto4 "go.thebigfile.com/core/rhp/v4"
 	"go.thebigfile.com/core/types"
+	"go.thebigfile.com/coreutils/chain"
+	rhp4 "go.thebigfile.com/coreutils/rhp/v4"
 	"go.uber.org/zap"
 )
 

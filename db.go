@@ -2,7 +2,7 @@ package coreutils
 
 import (
 	"go.etcd.io/bbolt"
-	"go.thebigfile/coreutils/chain"
+	"go.thebigfile.com/coreutils/chain"
 )
 
 // BoltChainDB implements chain.DB with a BoltDB database.

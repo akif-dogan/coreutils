@@ -9,10 +9,10 @@ import (
 	"net"
 	"time"
 
-	"go.thebigfile/coreutils/wallet"
 	"go.thebigfile.com/core/consensus"
 	rhp4 "go.thebigfile.com/core/rhp/v4"
 	"go.thebigfile.com/core/types"
+	"go.thebigfile.com/coreutils/wallet"
 	"go.uber.org/zap"
 	"lukechampine.com/frand"
 )

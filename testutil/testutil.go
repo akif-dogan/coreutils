@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"go.thebigfile/coreutils"
-	"go.thebigfile/coreutils/chain"
 	"go.thebigfile.com/core/consensus"
 	"go.thebigfile.com/core/types"
+	"go.thebigfile.com/coreutils"
+	"go.thebigfile.com/coreutils/chain"
 )
 
 // Network returns a test network and genesis block.

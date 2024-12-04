@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net"
 
-	"go.thebigfile/coreutils/chain"
 	"go.sia.tech/mux/v2"
 	"go.thebigfile.com/core/types"
+	"go.thebigfile.com/coreutils/chain"
 )
 
 // A Protocol is a string identifying a network protocol that a host may be

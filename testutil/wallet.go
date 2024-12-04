@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"go.thebigfile/coreutils/wallet"
 	"go.thebigfile.com/core/types"
+	"go.thebigfile.com/coreutils/wallet"
 )
 
 // An EphemeralWalletStore is a Store that does not persist its state to disk. It is

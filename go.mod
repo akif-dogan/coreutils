@@ -1,4 +1,4 @@
-module go.thebigfile/coreutils
+module go.thebigfile.com/coreutils
 
 go 1.23.1
 

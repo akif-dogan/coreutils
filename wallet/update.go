@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"go.thebigfile/coreutils/chain"
 	"go.thebigfile.com/core/types"
+	"go.thebigfile.com/coreutils/chain"
 )
 
 type (
