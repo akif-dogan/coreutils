@@ -23,7 +23,7 @@ func Mainnet() (*consensus.Network, types.Block) {
 
 		InitialCoinbase: types.Siacoins(300000),
 		MinimumCoinbase: types.Siacoins(30000),
-		InitialTarget:   types.BlockID{4: 32},
+		InitialTarget:   types.BlockID{3: 1},
 		BlockInterval:   10 * time.Minute,
 		MaturityDelay:   144,
 	}
