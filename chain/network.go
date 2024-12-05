@@ -27,35 +27,40 @@ func Mainnet() (*consensus.Network, types.Block) {
 		BlockInterval:   10 * time.Minute,
 		MaturityDelay:   144,
 	}
-	n.HardforkDevAddr.Height = 10000
+	n.HardforkDevAddr.Height = 1
 	n.HardforkDevAddr.OldAddress = types.Address{}
 	n.HardforkDevAddr.NewAddress = parseAddr("c10f0fc99f2ac2d6268a3427394cef5f419e858d4152309e9f8d4abbe8c495eeb804e05a961c")
 
-	n.HardforkTax.Height = 21000
+	n.HardforkTax.Height = 2
 
-	n.HardforkStorageProof.Height = 100000
+	n.HardforkStorageProof.Height = 5
 
-	n.HardforkOak.Height = 135000
-	n.HardforkOak.FixHeight = 139000
-	n.HardforkOak.GenesisTimestamp = time.Date(2024, time.December, 1, 0, 0, 0, 0, time.UTC)
+	n.HardforkOak.Height = 10
+	n.HardforkOak.FixHeight = 12
+	n.HardforkOak.GenesisTimestamp = time.Unix(1672531200, 0)
 
-	n.HardforkASIC.Height = 179000
+	n.HardforkASIC.Height = 20
 	n.HardforkASIC.OakTime = 120000 * time.Second
 	n.HardforkASIC.OakTarget = types.BlockID{8: 32}
 
-	n.HardforkFoundation.Height = 298000
+	n.HardforkFoundation.Height = 30
 	n.HardforkFoundation.PrimaryAddress = parseAddr("c10f0fc99f2ac2d6268a3427394cef5f419e858d4152309e9f8d4abbe8c495eeb804e05a961c")
 	n.HardforkFoundation.FailsafeAddress = parseAddr("c10f0fc99f2ac2d6268a3427394cef5f419e858d4152309e9f8d4abbe8c495eeb804e05a961c")
 
-	n.HardforkV2.AllowHeight = 1000000   // TBD
-	n.HardforkV2.RequireHeight = 1025000 // ~six months later
+	n.HardforkV2.AllowHeight = 8   // TBD
+	n.HardforkV2.RequireHeight = 9 // ~six months later
 
 	b := types.Block{
 		Timestamp: n.HardforkOak.GenesisTimestamp,
 		Transactions: []types.Transaction{{
-			SiafundOutputs: []types.SiafundOutput{
-				{Address: parseAddr("c10f0fc99f2ac2d6268a3427394cef5f419e858d4152309e9f8d4abbe8c495eeb804e05a961c"), Value: 10000},
-			},
+			SiacoinOutputs: []types.SiacoinOutput{{
+				Address: parseAddr("c10f0fc99f2ac2d6268a3427394cef5f419e858d4152309e9f8d4abbe8c495eeb804e05a961c"),
+				Value:   types.Siacoins(1).Mul64(1e12),
+			}},
+			SiafundOutputs: []types.SiafundOutput{{
+				Address: parseAddr("c10f0fc99f2ac2d6268a3427394cef5f419e858d4152309e9f8d4abbe8c495eeb804e05a961c"),
+				Value:   10000,
+			}},
 		}},
 	}
 
